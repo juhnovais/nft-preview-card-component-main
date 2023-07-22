@@ -1,0 +1,120 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  display: flex;
+  height: 100vh;
+  max-height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row;
+}
+body main {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 350px;
+  box-sizing: content-box;
+  padding: 20px;
+  border-radius: 10px;
+}
+body main .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+body main .img img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+body main .img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(178, 100%, 50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 10px;
+}
+body main .img:hover::before {
+  opacity: 0.5;
+}
+body main .img .overlay-icon {
+  position: absolute;
+  max-width: 60px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+body main .img:hover .overlay-icon {
+  opacity: 1;
+}
+body main h1 {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+body main h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+body main p {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.6;
+}
+body main .attribute {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+body main .attribute p {
+  margin: 0;
+}
+body main .attribute .ethWrap {
+  display: flex;
+  flex-flow: row;
+  gap: 6px;
+  align-items: center;
+}
+body main .attribute .ethWrap p.eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+body main hr {
+  border: none;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+body main .author {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 15px;
+}
+body main .author img {
+  max-width: 30px;
+  max-height: 30px;
+  border: 2px hsl(0, 0%, 100%) solid;
+  border-radius: 50%;
+}
+body main .author p span {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+body main .author p span:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/*# sourceMappingURL=styles.css.map */
